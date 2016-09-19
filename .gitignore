@@ -8,6 +8,8 @@
 *.war
 *.ear
 
+*.gitignore
+*.project
 *.classpath
 *.settings
 
