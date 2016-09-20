@@ -3,17 +3,19 @@ package bean;
 import java.util.ArrayList;
 
 @Entity
-public class SolicitudCompraBean {
+public class SolicitudArticuloBean {
 	private Integer id;
 	private ArrayList<ArticuloBean> articulos;
+	private boolean cumplimiento;
 	
-	public SolicitudCompraBean(Integer id, ArrayList<ArticuloBean> articulos) {
+	public SolicitudArticuloBean(Integer id, ArrayList<ArticuloBean> articulos, boolean cumplimiento) {
 		super();
 		this.id = id;
 		this.articulos = articulos;
+		this.cumplimiento = cumplimiento;
 	}
 	
-	public SolicitudCompraBean() {
+	public SolicitudArticuloBean() {
 
 	}
 
@@ -31,6 +33,14 @@ public class SolicitudCompraBean {
 
 	public void setArticulos(ArrayList<ArticuloBean> articulos) {
 		this.articulos = articulos;
+	}
+
+	public boolean isCumplimiento() {
+		return cumplimiento;
+	}
+
+	public void setCumplimiento(boolean cumplimiento) {
+		this.cumplimiento = cumplimiento;
 	}
 	
 }
