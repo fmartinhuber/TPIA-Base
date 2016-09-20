@@ -1,5 +1,7 @@
 package bean;
 
+//Prueba
+
 @Entity
 public class ArticuloBean {
 	private Integer id;
